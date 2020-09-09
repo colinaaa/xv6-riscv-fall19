@@ -10,7 +10,7 @@ main(int argc, char *argv[])
 
   if (argc != 1) {
     fprintf(2, "Usage: pingpong\n");
-    exit();
+    exit(0);
   }
   pipe(ps);
 
@@ -24,7 +24,7 @@ main(int argc, char *argv[])
 
     write(ps[0], &buf, 1);
     close(ps[0]);
-    exit();
+    exit(0);
   }
 
   // parent
@@ -35,5 +35,5 @@ main(int argc, char *argv[])
   read(ps[0], &buf, 1);
   close(ps[0]);
   printf("%d: received pong\n", pid);
-  exit();
+  exit(0);
 }

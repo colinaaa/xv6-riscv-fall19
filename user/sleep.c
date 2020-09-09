@@ -8,7 +8,7 @@ main(int argc, char *argv[])
 
   if(argc < 2 || argc > 2){
     fprintf(2, "Usage: sleep time\n");
-    exit();
+    exit(0);
   }
 
   // convert ascii to int
@@ -17,5 +17,5 @@ main(int argc, char *argv[])
   // do syscall
   sleep(i);
 
-  exit();
+  exit(0);
 }

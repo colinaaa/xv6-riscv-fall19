@@ -10,12 +10,12 @@ int main(int argc, char *argv[]) {
 
   if (argc != 3) {
     fprintf(2, "Usage: find [dir] [file]\n");
-    exit();
+    exit(0);
   }
 
   find(argv[1], argv[2]);
 
-  exit();
+  exit(0);
 }
 
 int find(char *dir, char *file) {

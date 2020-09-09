@@ -25,8 +25,8 @@ int main(int argc, char *argv[]) {
       exec(child_argv[0], child_argv);
     }
 
-    wait();
+    wait(0);
   }
 
-  exit();
+  exit(0);
 }

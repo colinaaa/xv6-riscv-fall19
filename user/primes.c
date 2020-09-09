@@ -27,8 +27,8 @@ main(int argc, char *argv[])
 
   close(ps[1]);
 
-  wait();
-  exit();
+  wait(0);
+  exit(0);
 }
 
 int
@@ -50,8 +50,8 @@ children(int n)
       // pipe closed
       close(ps[1]);
       close(ps[0]);
-      wait();
-      exit();
+      wait(0);
+      exit(0);
     }
 
     if (i % n == 0) {
