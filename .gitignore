@@ -5,6 +5,7 @@ _*
 *.asm
 *.sym
 *.img
+*.pyc
 vectors.S
 bootblock
 entryother
@@ -21,3 +22,5 @@ xv6.out*
 
 .clangd
 compile_commands.json
+.vagrant/
+submissions/
