@@ -5,7 +5,9 @@ int children(int n);
 
 int redirect(int *ps);
 
-int main(int argc, char *argv[]) {
+int
+main(int argc, char *argv[])
+{
   int i;
   int ps[2];
 
@@ -29,7 +31,9 @@ int main(int argc, char *argv[]) {
   exit();
 }
 
-int children(int n) {
+int
+children(int n)
+{
   printf("prime %d\n", n);
   int status, i;
   int hasChild;
@@ -73,7 +77,9 @@ int children(int n) {
   }
 }
 
-int redirect(int *ps) {
+int
+redirect(int *ps)
+{
   close(0);
   dup(ps[0]);
   close(ps[0]);
